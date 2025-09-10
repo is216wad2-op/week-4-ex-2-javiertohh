@@ -10,6 +10,12 @@
         }
 
         /* add CSS code here */
+        #div2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
 
     </style>
 
@@ -26,11 +32,18 @@
     <script>
         
        // add code here
+        // function changeShape(){
+        //     if(document.getElementById("div1").style.borderRadius){
+        //         document.getElementById("div1").style.borderRadius = "";
+        //     }else{
+        //         document.getElementById("div1").style.borderRadius = "50%";
+        //     }
+        // }
         function changeShape(){
-            if(document.getElementById("div1").style.borderRadius){
-                document.getElementById("div1").style.borderRadius = "";
+            if(document.getElementById("div1")){
+                document.getElementById("div1").id="div2";
             }else{
-                document.getElementById("div1").style.borderRadius = "50%";
+                document.getElementById("div2").id="div1";
             }
         }
     </script>
